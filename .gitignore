@@ -55,3 +55,5 @@
 .idea
 # Env File
 .env.local
+
+node_modules
