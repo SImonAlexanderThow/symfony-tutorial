@@ -1,6 +1,32 @@
 {
+    "api-platform/core": {
+        "version": "2.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.5",
+            "ref": "05b57782a78c21a664a42055dc11cf1954ca36bb"
+        },
+        "files": [
+            "config/packages/api_platform.yaml",
+            "config/routes/api_platform.yaml",
+            "src/Entity/.gitignore"
+        ]
+    },
+    "api-platform/schema-generator": {
+        "version": "v4.0.0"
+    },
     "composer/package-versions-deprecated": {
         "version": "1.11.99.1"
+    },
+    "composer/pcre": {
+        "version": "1.0.0"
+    },
+    "composer/semver": {
+        "version": "3.2.6"
+    },
+    "composer/xdebug-handler": {
+        "version": "2.0.3"
     },
     "doctrine/annotations": {
         "version": "1.13",
@@ -82,8 +108,35 @@
     "doctrine/sql-formatter": {
         "version": "1.1.2"
     },
+    "easycorp/easyadmin-bundle": {
+        "version": "3.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "b131e6cbfe1b898a508987851963fff485986285"
+        }
+    },
+    "easyrdf/easyrdf": {
+        "version": "1.1.1"
+    },
     "egulias/email-validator": {
         "version": "3.1.2"
+    },
+    "fig/link-util": {
+        "version": "1.1.2"
+    },
+    "friendsofphp/php-cs-fixer": {
+        "version": "3.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "be2103eb4a20942e28a6dd87736669b757132435"
+        },
+        "files": [
+            ".php-cs-fixer.dist.php"
+        ]
     },
     "friendsofphp/proxy-manager-lts": {
         "version": "v1.0.5"
@@ -97,14 +150,47 @@
     "laminas/laminas-code": {
         "version": "4.4.3"
     },
+    "league/html-to-markdown": {
+        "version": "5.0.2"
+    },
     "monolog/monolog": {
         "version": "2.3.5"
+    },
+    "nelmio/cors-bundle": {
+        "version": "2.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.5",
+            "ref": "6bea22e6c564fba3a1391615cada1437d0bde39c"
+        },
+        "files": [
+            "config/packages/nelmio_cors.yaml"
+        ]
+    },
+    "nette/php-generator": {
+        "version": "v3.6.5"
+    },
+    "nette/utils": {
+        "version": "v3.2.6"
     },
     "nikic/php-parser": {
         "version": "v4.13.1"
     },
+    "php-cs-fixer/diff": {
+        "version": "v2.0.2"
+    },
     "phpclassic/php-shopify": {
         "version": "v1.1.20"
+    },
+    "phpdocumentor/reflection-common": {
+        "version": "2.2.0"
+    },
+    "phpdocumentor/reflection-docblock": {
+        "version": "5.3.0"
+    },
+    "phpdocumentor/type-resolver": {
+        "version": "1.5.1"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -375,6 +461,9 @@
     "symfony/property-info": {
         "version": "v5.2.12"
     },
+    "symfony/proxy-manager-bridge": {
+        "version": "v5.2.12"
+    },
     "symfony/routing": {
         "version": "5.2",
         "recipe": {
@@ -527,5 +616,11 @@
     },
     "twig/twig": {
         "version": "v3.3.3"
+    },
+    "webmozart/assert": {
+        "version": "1.10.0"
+    },
+    "willdurand/negotiation": {
+        "version": "3.0.0"
     }
 }

@@ -8,18 +8,20 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Services\MyService;
+use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 class HomeController extends AbstractController
 {
     /**
      * @Route("/", name="/")
      */
-    public function index(Request  $request)
+    public function index(Request  $request, MyService $service )
     {
-         $entityManager = $this->getDoctrine()->getManager();
+         // $entityManager = $this->getDoctrine()->getManager();
 
-         $user = new User();
-         $user->setName('Robert');
+//         $user = new User();
+//         $user->setName('Robert');
 //
 //         for ($i=1; $i<=3; $i++)
 //         {
@@ -42,14 +44,6 @@ class HomeController extends AbstractController
 //
 //        dump($video->getUser()->getName());
 
-        $user = $this->getDoctrine()
-            ->getRepository(User::class)
-            ->find(1);
-
-        foreach ($user->getVideos() as $video)
-        {
-            dump($video->getTitle());
-        }
 
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
